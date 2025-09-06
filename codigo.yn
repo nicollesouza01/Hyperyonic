@@ -1,0 +1,68 @@
+@: Código em Linguagem HyperYoNic <:> By: Nicolle Souza
+@: Aqui é um comentário de uma linha só.
+
+@/
+Já aqui é um comentário
+de múltiplas linhas
+/@
+
+Iniciando
+
+int idade = 21;
+float bolsa = 700.00;
+string nome = "Nicolle Souza";
+char letra = 'N';
+bool ativo = verdade;
+
+@: Operação de leitura
+leia("Digite sua idade: ");
+
+@: Operação de escrita
+escreva("Eu gosto de programar computadores mas não sou muito boa nisso, tal qual John Egbert.");
+
+@: Estrutura condicional 'Se' e 'Se Não'
+se (idade >= 21) {
+    escreva("Meu nome é Nicolle, e estou gostando da disciplina de compiladores.");
+    bolsa += 700.00;
+} else {
+    escreva("Até um tempo atrás eu não gostava rsrs");
+}
+
+@: Estrutura de repetição 'Enquanto'
+int numero = 0;
+enquanto (numero < 3) {
+    numero++;
+    escreva("Contador: ");
+}
+
+@: Estrutura de repetição 'Para'
+para (int i = 0; i < 3; i++) {
+    bolsa += 2100.00 ;
+}
+
+@: Estrutura de repetição 'Faz Enquanto'
+faz{
+    
+    int numero = 0;
+
+    escreva("Testando a estrutura faz - enquanto, do-while")
+    numero++;
+
+}enquanto(numero < 4)
+
+@: Operadores lógicos
+se ((idade > 21) && (bolsa >= 700.00)) {
+    ativo = verdade;
+}
+
+se (nome == "Concursado" || idade >= 25) {
+    desconto = 0.15;
+}
+
+@: Operadores aritméticos
+total = (bolsa) * (1 - desconto);
+valor_final = total / 12;
+
+retorne 0;
+
+Finalizando
