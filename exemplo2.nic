@@ -1,0 +1,45 @@
+Iniciando
+    @: Declaracao de variaveis
+    int n;          @: Limite de termos a gerar
+    int contador;   @: Contador do loop
+    float a;        @: Primeiro termo (n-2)
+    float b;        @: Segundo termo (n-1)
+    float proximo;  @: O proximo termo (n-2 + n-1)
+
+    @/
+       Este programa calcula e exibe os N primeiros
+       termos da Sequencia de Fibonacci.
+    /@
+
+    escreva("--- Sequencia de Fibonacci ---");
+    escreva("Digite quantos termos voce quer ver: ");
+    leia(n);
+
+    @: Inicializacao dos primeiros termos
+    a = 0.0;
+    b = 1.0;
+    contador = 1;
+
+    escreva("Os termos sao:");
+
+    @: Trata o caso do primeiro termo (0)
+    se (n >= 1) {
+        escreva(a);
+        contador = contador + 1;
+    }
+
+    @: Loop para calcular os termos restantes
+    enquanto (contador <= n) {
+        escreva(b);
+
+        @: Calcula o proximo termo
+        proximo = a + b;
+
+        @: Atualiza os termos para a proxima iteracao
+        a = b;
+        b = proximo;
+
+        contador = contador + 1;
+    }
+
+Finalizando

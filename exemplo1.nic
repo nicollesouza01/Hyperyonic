@@ -1,0 +1,54 @@
+Iniciando
+    @: Declarando variaveis
+    int peso1;
+    int peso2;
+    float nota1;
+    float nota2;
+    float resultado;
+    string nome;
+
+    @/ 
+       Codigo para calcular a Media Ponderada do IFCE:
+       (N1 * 2 + N2 * 3) / 5
+    /@
+    
+    peso1 = 2;
+    peso2 = 3;
+
+    escreva("Bem vindo ao Calculador de Media IFCE!");
+    escreva("Aqui vc vai saber se vai ser aprovado antes do seu professor postar sua nota final rsrs =P");
+    escreva("Digite seu nome: ");
+    leia(nome);
+    escreva("Ola ");
+    escreva(nome);
+
+    escreva("--- Calculadora de Notas ---");
+    escreva("Este sistema calcula a media ponderada (N1*2 + N2*3)/5.");
+
+    @: Leitura das duas notas
+    escreva("Digite a primeira nota (N1, Peso 2): ");
+    leia(nota1);
+    
+    escreva("Digite a segunda nota (N2, Peso 3): ");
+    leia(nota2);
+
+    @: Calculo Ponderado: (N1 * P1 + N2 * P2) / (P1 + P2)
+    resultado = (nota1 * peso1 + nota2 * peso2) / (peso1 + peso2);
+
+    escreva("---------------------------------------");
+    escreva("Media Ponderada Final: ");
+    escreva(resultado);
+    escreva("---------------------------------------");
+
+    @: Checagem da Condicional
+    se (resultado >= 7.0) {
+        escreva("Parabens! Aprovado.");
+    } senao {
+        se (resultado >= 5.0) {
+            escreva("Atencao: Voce esta de Prova Final.");
+        } senao {
+            escreva("Reprovado. Tente novamente.");
+        }
+    }
+
+Finalizando
